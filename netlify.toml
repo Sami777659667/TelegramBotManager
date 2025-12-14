@@ -1,0 +1,15 @@
+[build]
+  functions = "functions"
+  publish = "public"
+
+# توجيه جميع طلبات API إلى دالة المعالجة
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api"
+  status = 200
+
+# إعادة توجيه الروابط الأخرى إلى التطبيق المصغر
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

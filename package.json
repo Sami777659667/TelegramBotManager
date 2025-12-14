@@ -1,0 +1,10 @@
+{
+  "name": "telegram-bot-host-manager",
+  "version": "2.0.0",
+  "description": "استضافة بوتات تلجرام متعددة على Netlify",
+  "main": "functions/api.js",
+  "dependencies": {
+    "telegraf": "^4.12.0",
+    "axios": "^1.6.0"
+  }
+}
